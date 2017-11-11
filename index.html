@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using timeout</title>
+    <style type="text/css">
+
+        /* button css style */
+        button
+        {
+            min-width: 120px;
+            background-color: orange; 
+            color: black; 
+            padding: 10px 16px;
+            font-size: 20px;
+            border:none;
+            margin-top: 10px;
+            margin-left: 15px;
+        }      
+
+        /* button disabled pseudo class when it is disabled */
+        button:disabled
+        {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #para
+        {
+            font-family: sans-serif;
+            font-size: 20px; 
+            color: blue;
+            margin-top: 20px;
+            margin-left: 15px;
+        }
+       
+    </style>
+	<script type="text/javascript" src="updateparacontentjs.js">
+	  
+    </script>
+</head>
+<body>
+
+<p id="para">Click the button to view the new content after 5 seconds</p>
+
+<button id="btnClick" onclick="displayParagraphContent();">Click Me</button>   
+
+</body>
+</html>
